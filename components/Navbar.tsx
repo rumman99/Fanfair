@@ -24,15 +24,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between w-full px-4 py-2 border-b-2 border-gray-200">
+    <div className="flex items-center justify-between w-full px-4 py-2 border-b-2 border-gray-200 bg-black">
       <Link href="/">
-        <span className="text-3xl cursor-pointer pl-7 bold">FANFAIR</span>
+        <span className="text-3xl cursor-pointer pl-7 bold fanfair-color">FANFAIR</span>
       </Link>
 
       <div className="relative hidden md:block">
         <form
           onSubmit={handleSearch}
-          className="absolute md:static top-10 -left-20 bg-white"
+          className="absolute md:static top-10 -left-20 bg-white bg-color2"
         >
           <input
             value={searchValue}
@@ -53,7 +53,7 @@ const Navbar = () => {
         {userProfile ? (
           <div className="flex gap-5 md:gap-10 ">
             <Link href="/upload">
-              <button className="flex items-center gap-2 px-2 font-semibold border-2 md:px-4 text-md">
+              <button className="flex items-center gap-2 px-2 font-semibold border-2 md:px-4 text-md btn-color1">
                 <IoMdAdd className="text-xl" /> {``}
                 <span className="hidden md:block"> Upload</span>
               </button>

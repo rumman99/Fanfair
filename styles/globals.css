@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-black .bg-color2{
+    background-color: #1A1A1D;
+}
+.bg-black{
+    border-radius: 15px;
+}
+
+.fanfair-color{
+    background: linear-gradient(to right,#C3073F,#950740);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'GALACTIC VANGUARDIAN NCV';
+}
+
+.btn-color1{
+    color: white;
+}
